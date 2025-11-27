@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="maincontainer" id="screen">
+      <div class="heading">
+        <h1 style="text-align: center">CALCULATOR</h1>
+      </div>
+
+      <div class="calculator" id="cal">
+        <div class="outputviewbox">
+          <input type="text" name="" id="outputscreen" />
+        </div>
+
+        <div class="buttons">
+          <button class="clearbutton" onclick="clearscreen()">C</button>
+
+          <div class="row">
+            <button class="buttonsstyle" onclick="buttonclick(7)">7</button>
+            <button class="buttonsstyle" onclick="buttonclick(8)">8</button>
+            <button class="buttonsstyle" onclick="buttonclick(9)">9</button>
+            <button class="buttonsstyle" onclick="buttonclick('/')">/</button>
+          </div>
+          <div class="row">
+            <button class="buttonsstyle" onclick="buttonclick(4)">4</button>
+            <button class="buttonsstyle" onclick="buttonclick(5)">5</button>
+            <button class="buttonsstyle" onclick="buttonclick(6)">6</button>
+            <button class="buttonsstyle" onclick="buttonclick('*')">X</button>
+          </div>
+          <div class="row">
+            <button class="buttonsstyle" onclick="buttonclick(1)">1</button>
+            <button class="buttonsstyle" onclick="buttonclick(2)">2</button>
+            <button class="buttonsstyle" onclick="buttonclick(3)">3</button>
+            <button class="buttonsstyle" onclick="buttonclick('-')">-</button>
+          </div>
+          <div class="row">
+            <button class="buttonsstyle" onclick="buttonclick('.')">.</button>
+            <button class="buttonsstyle" onclick="buttonclick(0)">0</button>
+            <button class="buttonsstyle" onclick="buttonclick('+')">+</button>
+            <button class="buttonsstyle" onclick="equalclick()">=</button>
+          </div>
+        </div>
+      </div>
+      <div class="Footer">
+        <h1 style="text-align: center">CALCULATOR</h1>
+      </div>
+    </div>
+
+    <script>
+      function colorscrn(col, col2) {
+        document.getElementById("screen").style.background = col;
+        document.getElementById("screen").style.background = col2;
+      }
+    </script>
+  </body>
+</html>

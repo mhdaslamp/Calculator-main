@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.maincontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: red;
+  margin: 0;
+}
+
+.heading {
+  width: 100%;
+  height: auto;
+  background: rgb(0, 46, 105);
+  color: white;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  width: 400px;
+  height: 550px;
+  background: rgb(0, 46, 105);
+  border-radius: 10px;
+}
+
+#outputscreen {
+  width: 80%;
+  margin-left: 35px;
+  height: 40px;
+  margin-top: 35px;
+  pointer-events: none;
+  text-shadow: 5mm;
+  font-size: x-large;
+  text-overflow: initial;
+  border-radius: 10px;
+}
+.row {
+  padding-left: 22px;
+  padding-top: 25px;
+  font-weight: bolder;
+}
+.buttonsstyle {
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  background-color: rgb(231, 231, 231);
+  font-size: x-large;
+  border-radius: 10px;
+}
+.buttonsstyle:hover {
+  background: rgb(255, 255, 255);
+}
+.clearbutton {
+  margin-left: 22px;
+  height: 60px;
+  width: 60px;
+  margin-left: 45px;
+  padding-top: 2px;
+  background-color: rgb(231, 231, 231);
+  font-size: x-large;
+  border-radius: 10px;
+}
+.buttons {
+  margin-top: 1cm;
+}
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    background-color: lightblue;
+    margin-top: 10px;
+    width: 60%;
+    height: 450px;
+  }
+
+  .buttonsstyle {
+    height: 45px;
+    width: 45px;
+    margin-left: 20px;
+    background-color: rgb(231, 231, 231);
+    font-size: x-large;
+    border-radius: 5px;
+  }
+  .row {
+    padding-left: 22px;
+    padding-top: 18px;
+    font-weight: bolder;
+  }
+
+  .clearbutton {
+    margin-left: 22px;
+    height: 45px;
+    width: 45px;
+    margin-left: 42px;
+    padding-top: 2px;
+    background-color: rgb(231, 231, 231);
+    font-size: x-large;
+    border-radius: 10px;
+  }
+}
