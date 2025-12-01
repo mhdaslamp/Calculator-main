@@ -1,21 +1,27 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(54, 54, 54);
 }
+
 .maincontainer {
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-content: center;
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: red;
   margin: 0;
 }
 
 .heading {
   width: 100%;
+
   height: auto;
-  background: rgb(0, 46, 105);
   color: white;
   padding: 10px 0px 10px 0px;
   margin-bottom: 20px;
@@ -24,14 +30,15 @@ body {
 .calculator {
   width: 400px;
   height: 550px;
-  background: rgb(0, 46, 105);
+  background: rgb(51, 0, 85);
   border-radius: 10px;
 }
 
 #outputscreen {
   width: 80%;
-  margin-left: 35px;
   height: 40px;
+  margin-left: 35px;
+
   margin-top: 35px;
   pointer-events: none;
   text-shadow: 5mm;
@@ -40,7 +47,6 @@ body {
   border-radius: 10px;
 }
 .row {
-  padding-left: 22px;
   padding-top: 25px;
   font-weight: bolder;
 }
@@ -55,50 +61,129 @@ body {
 .buttonsstyle:hover {
   background: rgb(255, 255, 255);
 }
+
+.buttons {
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 6%;
+}
 .clearbutton {
-  margin-left: 22px;
   height: 60px;
   width: 60px;
-  margin-left: 45px;
-  padding-top: 2px;
-  background-color: rgb(231, 231, 231);
   font-size: x-large;
   border-radius: 10px;
 }
-.buttons {
-  margin-top: 1cm;
+#clrbtn {
+  display: block;
+  margin-left: 20px;
+  width: auto;
 }
 
 @media screen and (max-width: 600px) {
   .calculator {
-    background-color: lightblue;
     margin-top: 10px;
     width: 60%;
     height: 450px;
+    width: 350px;
+    height: 550px;
   }
 
   .buttonsstyle {
-    height: 45px;
-    width: 45px;
-    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+
     background-color: rgb(231, 231, 231);
     font-size: x-large;
     border-radius: 5px;
   }
   .row {
-    padding-left: 22px;
     padding-top: 18px;
     font-weight: bolder;
   }
 
   .clearbutton {
-    margin-left: 22px;
-    height: 45px;
-    width: 45px;
-    margin-left: 42px;
+    height: 50px;
+    width: 50px;
     padding-top: 2px;
+  }
+
+  .buttons {
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .calculator {
+    margin-top: 5px;
+    width: 75%;
+    height: 450px;
+  }
+
+  .buttonsstyle {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    background-color: rgb(231, 231, 231);
+    font-size: x-large;
+    border-radius: 5px;
+  }
+  .row {
+    padding-top: 18px;
+    font-weight: bolder;
+  }
+
+  .clearbutton {
+    height: 50px;
+    width: 50px;
+    padding-top: 2px;
+
     background-color: rgb(231, 231, 231);
     font-size: x-large;
     border-radius: 10px;
+  }
+  #outputscreen {
+    margin-left: 25px;
+  }
+
+  .buttons {
+    margin-left: 10%;
+  }
+
+  #clrbtn {
+    margin-left: 10px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .calculator {
+    margin-top: 5px;
+    width: 88%;
+    height: 450px;
+  }
+
+  .buttonsstyle {
+    height: 40px;
+    width: 40px;
+  }
+
+  .clearbutton {
+    height: 40px;
+    width: 40px;
+    padding-top: 2px;
+  }
+
+  #clrbtn {
+    margin-left: 10px;
+    width: auto;
+  }
+
+  #outputscreen {
+    margin-left: 20px;
+  }
+  .buttons {
+    margin-left: 4%;
   }
 }
